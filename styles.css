@@ -19,10 +19,38 @@ header {
 }
 
 /* Navigation styles */
+
 nav {
-  background-color: #444;
+  background-color: #333;
   color: #fff;
-  padding: 10px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hover effect */
+.nav-links li a:hover {
+  color: #ddd;
 }
 
 /* Main content styles */
