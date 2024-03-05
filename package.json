@@ -1,0 +1,12 @@
+{
+  "name": "bibleversesharing",
+  "version": "1.0.0",
+  "description": "A trial at creating a Bible Sharing web app to use to practise new skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Isaac Fabs",
+  "license": "ISC"
+}
