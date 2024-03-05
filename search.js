@@ -1,3 +1,6 @@
+require("dotenv/config");
+const { OpenAI } = require("openai");
+
 // Function to handle search input
 function handleSearch() {
   const searchInput = document.querySelector("#searchInput");
