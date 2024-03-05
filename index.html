@@ -15,9 +15,9 @@
       <!-- Navigation bar content goes here -->
       <div class="logo">Bible Verse Platform</div>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="#">Explore</a></li>
-        <li><a href="#">Profile</a></li>
+        <li><a href="profile.html">Profile</a></li>
         <li><a href="#">Notifications</a></li>
         <li><a href="#">Log Out</a></li>
       </ul>
@@ -34,11 +34,14 @@
         </div>
         <div class="search-bar">
           <h2>Search Bible Verses</h2>
-          <input
-            type="text"
-            id="searchInput"
-            placeholder="Search by verse, topic, or keyword"
-          />
+          <form action="search.html" method="get">
+            <input
+              type="text"
+              name="searchQuery"
+              placeholder="Search by verse, topic, or keyword"
+            />
+            <button type="submit">Search</button>
+          </form>
         </div>
 
         <div class="explore-section">
@@ -48,6 +51,22 @@
         <div class="latest-content">
           <h2>Latest Shared Content</h2>
           <!-- Latest shared content goes here -->
+        </div>
+      </section>
+      <section class="suggested-prayer-section">
+        <h2>Suggested Prayer and Relevant Bible Passage</h2>
+        <form id="prayerForm">
+          <label for="prayerKeywords">Enter Prayer Points Keywords:</label>
+          <input
+            type="text"
+            id="prayerKeywords"
+            name="prayerKeywords"
+            placeholder="Enter keywords..."
+          />
+          <button type="submit">Generate Suggestions</button>
+        </form>
+        <div id="prayerResults">
+          <!-- Generated prayer points and Bible passages will be displayed here -->
         </div>
       </section>
     </main>

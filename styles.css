@@ -67,7 +67,8 @@ main {
 .featured-verse,
 .search-bar,
 .explore-section,
-.latest-content {
+.latest-content,
+.suggested-prayer-section {
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
@@ -77,11 +78,14 @@ main {
 .featured-verse h2,
 .search-bar h2,
 .explore-section h2,
-.latest-content h2 {
+.latest-content h2,
+.suggested-prayer-section h2 {
   margin-bottom: 10px;
 }
 
-.search-bar input[type="text"] {
+.search-bar,
+.suggested-prayer-section,
+input[type="text"] {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
